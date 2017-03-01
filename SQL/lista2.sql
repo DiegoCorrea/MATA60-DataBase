@@ -5,7 +5,7 @@ SELECT codgerente FROM Funcionario GROUP BY codgerente;
 SELECT DISTINCT dtadmissao,codgerente FROM Funcionario;
 
 SELECT CONCAT(nomefuncionario,' ',sobrenmfunc) AS nome FROM Funcionario
-WHERE CodGerente is null OR codGerente=(SELECT codFuncionario FROM Funcionario 
+WHERE CodGerente IS NULL OR codGerente=(SELECT codFuncionario FROM Funcionario 
 WHERE nomefuncionario='Daniela');
 
 SELECT * FROM funcionario 
